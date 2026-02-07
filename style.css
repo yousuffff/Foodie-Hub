@@ -99,7 +99,6 @@ button:after {
   z-index: -1;
 }
 
-button:main,
 button:focus {
   user-select: auto;
 }

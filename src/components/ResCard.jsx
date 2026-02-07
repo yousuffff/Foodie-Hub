@@ -1,19 +1,20 @@
 import { IMG_CDN } from "../utils/Constants";
 
-const ResCard = (props) => {
-  const { resData } = props;
-  // console.log(resData.info);
+const ResCard = ({ resData }) => {
+  // const { card } = resData;
+  console.log(resData);
   return (
     <div className="res-card">
       <img
         className="res-logo"
-        src={IMG_CDN + resData.info.cloudinaryImageId}
+        src={IMG_CDN + resData.cloudinaryImageId}
         alt="res-logo"
       />
-      <h3>{resData.info.name}</h3>
-      <h4>{resData.info.cuisines.join(", ")}</h4>
-      <h4>{resData.info.costForTwo}</h4>
-      <h5>{resData.info.avgRating} </h5>
+      <h3>{resData.name}</h3>
+      <h4>{resData.cuisines.join(",")}</h4>
+      <h4>{resData.areaName}</h4>
+
+      <h5>{resData.avgRating} </h5>
     </div>
   );
 };
