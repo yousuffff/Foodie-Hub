@@ -11,7 +11,7 @@ const ResCard = ({ resData }) => {
         alt="res-logo"
       />
       <h3>{resData.name}</h3>
-      <h4>{resData.cuisines.join(",")}</h4>
+      <h4>{resData.cuisines.join(", ")}</h4>
       <h4>{resData.areaName}</h4>
 
       <h5>{resData.avgRating} </h5>
