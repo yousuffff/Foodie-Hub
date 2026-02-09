@@ -2,7 +2,7 @@ import { IMG_CDN } from "../utils/Constants";
 
 const ResCard = ({ resData }) => {
   // const { card } = resData;
-  console.log(resData);
+  // console.log(resData);
   return (
     <div className="res-card">
       <img
