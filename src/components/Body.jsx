@@ -3,19 +3,28 @@ import ResCard from "./ResCard";
 import { useEffect, useState } from "react";
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState(dataList);
-  // console.log(listOfRestaurants);
-
+  const [filterRestaurants, setFilterRestaurants] = useState(listOfRestaurants);
+  console.log(listOfRestaurants);
+  const [searchText, setSearchText] = useState("");
   useEffect(() => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const filteresList = listOfRestaurants.filter((res) =>
+      res.info.name.toLowerCase().includes(searchText.toLowerCase()),
+    );
+    setFilterRestaurants(filteresList);
+  }, [searchText]);
   const fetchData = async () => {
     try {
       const data = await fetch(
         "https://www.swiggy.com/api/instamart/home/v2?offset=0&storeId=&primaryStoreId=&secondaryStoreId=&clientId=INSTAMART-WEB",
       );
       const json = await data.json();
-      console.log(json.data?.cards[0]?.card?.card.gridElements.infoWithStyle.items);
+      // console.log(
+      //   json.data?.cards[0]?.card?.card.gridElements.infoWithStyle.items,
+      // );
     } catch (error) {
       console.log("error is here", error);
     }
@@ -127,8 +136,15 @@ const Body = () => {
   return (
     <div className="body">
       <div className="search">
-        <input type="text" placeholder="Search" />
-        <button>Search</button>
+        <input
+          type="text"
+          placeholder="Search"
+          value={searchText}
+          onChange={(e) => {
+            setSearchText(e.target.value);
+          }}
+        />
+        <button onClick={() => {}}>Search</button>
         <button
           className="filter-btn"
           onClick={() => {
@@ -143,9 +159,13 @@ const Body = () => {
         <button onClick={() => setListOfRestaurants(dataList)}>Reset</button>
       </div>
       <div className="res-container">
-        {listOfRestaurants.map((res) => (
-          <ResCard key={res.info.id} resData={res.info} />
-        ))}
+        {filterRestaurants.length === 0 ? (
+          <h2>No Card</h2>
+        ) : (
+          filterRestaurants.map((res) => (
+            <ResCard key={res.info.id} resData={res.info} />
+          ))
+        )}
       </div>
     </div>
   );
