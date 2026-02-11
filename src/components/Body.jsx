@@ -19,9 +19,11 @@ const Body = () => {
   const fetchData = async () => {
     try {
       const data = await fetch(
-        "https://www.swiggy.com/api/instamart/home/v2?offset=0&storeId=&primaryStoreId=&secondaryStoreId=&clientId=INSTAMART-WEB",
+        // "https://www.swiggy.com/api/instamart/home/v2?offset=0&storeId=&primaryStoreId=&secondaryStoreId=&clientId=INSTAMART-WEB",
+        "https://www.swiggy.com/mapi/restaurants/list/v5?lat=26.8373&lng=80.9165&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&carousel=true&third_party_vendor=1",
       );
       const json = await data.json();
+      console.log(json);
       // console.log(
       //   json.data?.cards[0]?.card?.card.gridElements.infoWithStyle.items,
       // );

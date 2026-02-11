@@ -937,71 +937,8 @@ const dataList = [
       type: "WEBLINK",
     },
   },
-  {
-    info: {
-      id: "229728",
-      name: "The Good Bowl",
-      cloudinaryImageId:
-        "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/15/45f37283-c89f-44bb-af5b-0dfcef41e83b_229728.jpg",
-      locality: "Habibulla Estate Road",
-      areaName: "Hazratganj",
-      costForTwo: "₹400 for two",
-      cuisines: ["Biryani", "Pastas", "Punjabi", "Desserts", "Beverages"],
-      avgRating: 4.5,
-      parentId: "7918",
-      avgRatingString: "4.5",
-      totalRatingsString: "3.1K+",
-      sla: {
-        deliveryTime: 39,
-        lastMileTravel: 7,
-        serviceability: "SERVICEABLE",
-        slaString: "35-40 mins",
-        lastMileTravelString: "7.0 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2025-09-20 23:59:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "ITEMS",
-        subHeader: "AT ₹119",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-      externalRatings: {
-        aggregatedRating: {
-          rating: "--",
-        },
-      },
-      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-    },
-    analytics: {
-      context: "seo-data-0e25553e-e356-4226-9118-8562939fc53e",
-    },
-    cta: {
-      link: "https://www.swiggy.com/city/lucknow/the-good-bowl-habibulla-estate-road-hazratganj-rest229728",
-      type: "WEBLINK",
-    },
-  },
+
+  ,
   {
     info: {
       id: "635227",
@@ -1512,6 +1449,625 @@ const dataList = [
       link: "https://www.swiggy.com/city/lucknow/oven-story-pizza-hazratganj-rest229725",
       type: "WEBLINK",
     },
+  },
+  {
+    info: {
+      id: "562616",
+      name: "Biryani Blues",
+      cloudinaryImageId: "97377e54937c079fe269d744aa66274a",
+      locality: "Lucknow -RF",
+      areaName: "Hazratganj",
+      costForTwo: "₹400 for two",
+      cuisines: [
+        "Biryani",
+        "Hyderabadi",
+        "Lucknowi",
+        "Kebabs",
+        "Beverages",
+        "Desserts",
+      ],
+      avgRating: 4.4,
+      parentId: "13813",
+      avgRatingString: "4.4",
+      totalRatingsString: "2.2K+",
+      promoted: true,
+      adTrackingId:
+        "cid=b9ff2411-de6d-4634-a80c-4b10ab7bf449~p=1~adgrpid=b9ff2411-de6d-4634-a80c-4b10ab7bf449#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=562616~plpr=COLLECTION~eid=2891e974-7a92-4151-a1d5-ebe1efb1061d~srvts=1770800209286~collid=83639",
+      sla: {
+        deliveryTime: 30,
+        lastMileTravel: 4.1,
+        serviceability: "SERVICEABLE",
+        slaString: "25-30 mins",
+        lastMileTravelString: "4.1 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2026-02-12 03:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          textBased: {},
+          imageBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "ITEMS",
+        subHeader: "AT ₹69",
+        logoCtx: {
+          text: "BENEFITS",
+        },
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+        commsStyling: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      campaignId: "b9ff2411-de6d-4634-a80c-4b10ab7bf449",
+    },
+    analytics: {},
+    cta: {
+      link: "swiggy://menu?restaurant_id=562616&source=collection&query=Biryani",
+      text: "RESTAURANT_MENU",
+      type: "DEEPLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
+  },
+  {
+    info: {
+      id: "1053904",
+      name: "Honest Bowl",
+      cloudinaryImageId:
+        "FOOD_CATALOG/IMAGES/CMS/2025/7/24/2875df7a-1a18-4d34-bfb4-cff3bd67e44e_0f07b466-4323-4766-b759-929ce6e015fb.jpeg",
+      locality: "Hazratganj",
+      areaName: "Hazratganj",
+      costForTwo: "₹200 for two",
+      cuisines: ["North Indian", "High Protein", "Biryani"],
+      avgRating: 4.5,
+      parentId: "612552",
+      avgRatingString: "4.5",
+      totalRatingsString: "171",
+      sla: {
+        deliveryTime: 34,
+        lastMileTravel: 4.1,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "4.1 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2026-02-11 23:59:00",
+        opened: true,
+      },
+      badges: {
+        imageBadges: [
+          {
+            imageId: "High%20Protein/rx%20tag%205.png",
+            description: "High Protein",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          textBased: {},
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  imageId: "High%20Protein/rx%20tag%205.png",
+                  description: "High Protein",
+                },
+              },
+            ],
+          },
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "60% OFF",
+        subHeader: "UPTO ₹120",
+        logoCtx: {
+          text: "BENEFITS",
+        },
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+        commsStyling: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    },
+    analytics: {},
+    cta: {
+      link: "swiggy://menu?restaurant_id=1053904&source=collection&query=Biryani",
+      text: "RESTAURANT_MENU",
+      type: "DEEPLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
+  },
+  {
+    info: {
+      id: "564947",
+      name: "Bikkgane Biryani",
+      cloudinaryImageId:
+        "FOOD_CATALOG/IMAGES/CMS/2025/6/24/28ba8630-7acf-4c97-b653-67acbd83b535_6b97bc3b-ddf2-476d-9849-aa8b0e0e7856.jpg",
+      locality: "Nagar Nigam",
+      areaName: "Aashiana",
+      costForTwo: "₹350 for two",
+      cuisines: [
+        "Biryani",
+        " Hyderabadi",
+        " Andhra",
+        " Lucknowi",
+        " Kolkata",
+        " Desserts",
+        "Beverages",
+      ],
+      avgRating: 4.3,
+      parentId: "5070",
+      avgRatingString: "4.3",
+      totalRatingsString: "4.1K+",
+      promoted: true,
+      adTrackingId:
+        "cid=be342adf-2a9d-4767-8674-1c3c98526fa4~p=2~adgrpid=be342adf-2a9d-4767-8674-1c3c98526fa4#ag11~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=564947~plpr=COLLECTION~eid=42dd9f49-c5d4-43b4-88bf-c735c9dcf937~srvts=1770800209286~collid=83639",
+      sla: {
+        deliveryTime: 41,
+        lastMileTravel: 8.8,
+        serviceability: "SERVICEABLE",
+        slaString: "40-50 mins",
+        lastMileTravelString: "8.8 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2026-02-12 00:00:00",
+        opened: true,
+      },
+      badges: {
+        imageBadges: [
+          {
+            imageId: "Rxawards/_CATEGORY-Biryani.png",
+            description: "Delivery!",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  imageId: "Rxawards/_CATEGORY-Biryani.png",
+                  description: "Delivery!",
+                },
+              },
+            ],
+          },
+          textExtendedBadges: {},
+          textBased: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "ITEMS",
+        subHeader: "AT ₹50",
+        logoCtx: {
+          text: "BENEFITS",
+        },
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+        commsStyling: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      campaignId: "be342adf-2a9d-4767-8674-1c3c98526fa4",
+    },
+    analytics: {},
+    cta: {
+      link: "swiggy://menu?restaurant_id=564947&source=collection&query=Biryani",
+      text: "RESTAURANT_MENU",
+      type: "DEEPLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
+  },
+  {
+    info: {
+      id: "591314",
+      name: "Dum Safar Biryani",
+      cloudinaryImageId: "mebzhbwiwslsjoxflr13",
+      locality: "Riverside Mall",
+      areaName: "Gomti Nagar",
+      costForTwo: "₹500 for two",
+      cuisines: ["Biryani", "Kebabs", "North Indian", "Barbecue"],
+      avgRating: 4.5,
+      parentId: "351013",
+      avgRatingString: "4.5",
+      totalRatingsString: "812",
+      sla: {
+        deliveryTime: 36,
+        lastMileTravel: 8.1,
+        serviceability: "SERVICEABLE",
+        slaString: "35-40 mins",
+        lastMileTravelString: "8.1 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2026-02-11 23:30:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          textBased: {},
+          imageBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "ITEMS",
+        subHeader: "AT ₹64",
+        logoCtx: {
+          text: "BENEFITS",
+        },
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+        commsStyling: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    },
+    analytics: {},
+    cta: {
+      link: "swiggy://menu?restaurant_id=591314&source=collection&query=Biryani",
+      text: "RESTAURANT_MENU",
+      type: "DEEPLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
+  },
+
+  {
+    info: {
+      id: "229728",
+      name: "The Good Bowl",
+      cloudinaryImageId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/15/45f37283-c89f-44bb-af5b-0dfcef41e83b_229728.jpg",
+      locality: "Habibulla Estate Road",
+      areaName: "Hazratganj",
+      costForTwo: "₹400 for two",
+      cuisines: ["Biryani", "Pastas", "Punjabi", "Desserts", "Beverages"],
+      avgRating: 4.5,
+      parentId: "7918",
+      avgRatingString: "4.5",
+      totalRatingsString: "3.2K+",
+      promoted: true,
+      adTrackingId:
+        "cid=be448631-ade5-4c78-8855-16b7a952109e~p=3~adgrpid=be448631-ade5-4c78-8855-16b7a952109e#ag14~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=229728~plpr=COLLECTION~eid=ffd95c99-82c7-4085-99c3-570c8df585fd~srvts=1770800209286~collid=83639",
+      sla: {
+        deliveryTime: 34,
+        lastMileTravel: 4.2,
+        serviceability: "SERVICEABLE",
+        slaString: "30-40 mins",
+        lastMileTravelString: "4.2 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2026-02-11 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          textBased: {},
+          imageBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "ITEMS",
+        subHeader: "AT ₹99",
+        logoCtx: {
+          text: "BENEFITS",
+        },
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+        commsStyling: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      campaignId: "be448631-ade5-4c78-8855-16b7a952109e",
+    },
+    analytics: {},
+    cta: {
+      link: "swiggy://menu?restaurant_id=229728&source=collection&query=Biryani",
+      text: "RESTAURANT_MENU",
+      type: "DEEPLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
+  },
+  {
+    info: {
+      id: "573080",
+      name: "KFC",
+      cloudinaryImageId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2026/1/8/5d6988d2-9226-4a2f-8b5e-cfd082ccf4cf_573080.JPG",
+      locality: "Sector K",
+      areaName: "Aashiana",
+      costForTwo: "₹400 for two",
+      cuisines: ["Burgers", "Fast Food", "Rolls & Wraps"],
+      avgRating: 4.3,
+      parentId: "547",
+      avgRatingString: "4.3",
+      totalRatingsString: "1.4K+",
+      sla: {
+        deliveryTime: 33,
+        lastMileTravel: 7.8,
+        serviceability: "SERVICEABLE",
+        slaString: "30-35 mins",
+        lastMileTravelString: "7.8 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2026-02-12 04:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          textBased: {},
+          imageBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "ITEMS",
+        subHeader: "AT ₹199",
+        logoCtx: {
+          text: "BENEFITS",
+        },
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+        commsStyling: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+    },
+    analytics: {},
+    cta: {
+      link: "swiggy://menu?restaurant_id=573080&source=collection&query=Biryani",
+      text: "RESTAURANT_MENU",
+      type: "DEEPLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
+  },
+
+  {
+    info: {
+      id: "575162",
+      name: "Veg Darbar by Behrouz Biryani",
+      cloudinaryImageId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2025/9/9/917a9e33-1245-42af-8790-291f551512dc_575162.JPG",
+      locality: "Habibulla Estate Road",
+      areaName: "Hazratganj",
+      costForTwo: "₹700 for two",
+      cuisines: [
+        "Biryani",
+        "North Indian",
+        "Kebabs",
+        "Mughlai",
+        "Beverages",
+        "Desserts",
+      ],
+      avgRating: 4.4,
+      veg: true,
+      parentId: "344904",
+      avgRatingString: "4.4",
+      totalRatingsString: "145",
+      promoted: true,
+      adTrackingId:
+        "cid=3dad4af9-8de2-4e3b-94d8-e67aeb1cc78c~p=10~adgrpid=3dad4af9-8de2-4e3b-94d8-e67aeb1cc78c#ag14~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=575162~plpr=COLLECTION~eid=c6f1b6f0-e0ae-4c60-9335-2a524562ae64~srvts=1770800209286~collid=83639",
+      sla: {
+        deliveryTime: 37,
+        lastMileTravel: 4.2,
+        serviceability: "SERVICEABLE",
+        slaString: "35-40 mins",
+        lastMileTravelString: "4.2 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2026-02-11 23:59:00",
+        opened: true,
+      },
+      badges: {
+        imageBadges: [
+          {
+            imageId: "v1695133679/badges/Pure_Veg111.png",
+            description: "pureveg",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
+              {
+                attributes: {
+                  imageId: "v1695133679/badges/Pure_Veg111.png",
+                  description: "pureveg",
+                },
+              },
+            ],
+          },
+          textExtendedBadges: {},
+          textBased: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "ITEMS",
+        subHeader: "AT ₹99",
+        logoCtx: {
+          text: "BENEFITS",
+        },
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+        commsStyling: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      campaignId: "3dad4af9-8de2-4e3b-94d8-e67aeb1cc78c",
+    },
+    analytics: {},
+    cta: {
+      link: "swiggy://menu?restaurant_id=575162&source=collection&query=Biryani",
+      text: "RESTAURANT_MENU",
+      type: "DEEPLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
   },
 ];
 export default dataList;

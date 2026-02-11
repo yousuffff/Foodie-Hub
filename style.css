@@ -15,7 +15,7 @@
     "Helvetica Neue",
     sans-serif;
 
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .app {
   height: 100%;
@@ -70,8 +70,10 @@ li:hover {
   border: 2px solid black;
 }
 button {
+  display: flex;
+  align-self: center;
   appearance: button;
-  background-color: #1899d6;
+  /* background-color: #1899d6; */
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -86,7 +88,7 @@ button {
   margin: 0;
   outline: none;
   overflow: visible;
-  padding: 9px 15px;
+  padding: 5px 15px;
   text-align: center;
   text-transform: uppercase;
   touch-action: manipulation;
@@ -95,6 +97,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
+  
   white-space: nowrap;
 }
 
@@ -129,9 +132,9 @@ button:active:after {
   border-width: 0 0 0px;
 }
 
-button:active {
+/* button:active {
   padding-bottom: 10px;
-}
+} */
 .res-container {
   display: flex;
   flex-direction: row;
