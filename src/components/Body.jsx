@@ -1,6 +1,8 @@
 import dataList from "../utils/Mockdata";
 import ResCard from "./ResCard";
 import { useEffect, useState } from "react";
+import ResCardShimmer from "./ResCarsShimmer";
+import { Link } from "react-router";
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState(dataList);
   const [filterRestaurants, setFilterRestaurants] = useState(listOfRestaurants);
@@ -23,7 +25,7 @@ const Body = () => {
         "https://www.swiggy.com/mapi/restaurants/list/v5?lat=26.8373&lng=80.9165&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&carousel=true&third_party_vendor=1",
       );
       const json = await data.json();
-      console.log(json);
+      // console.log(json);
       // console.log(
       //   json.data?.cards[0]?.card?.card.gridElements.infoWithStyle.items,
       // );
@@ -135,7 +137,11 @@ const Body = () => {
   //     },
   //   },
   // };
-  return (
+  return !filterRestaurants?.length ? (
+    Array(8)
+      .fill("")
+      .map((_, index) => <ResCardShimmer key={index} />)
+  ) : (
     <div className="body">
       <div className="search">
         <input
@@ -165,7 +171,9 @@ const Body = () => {
           <h2>No Card</h2>
         ) : (
           filterRestaurants.map((res) => (
-            <ResCard key={res.info.id} resData={res.info} />
+            <Link key={res.info.id} to={"/restaurent/" + res.info.id}>
+              <ResCard resData={res.info} />
+            </Link>
           ))
         )}
       </div>

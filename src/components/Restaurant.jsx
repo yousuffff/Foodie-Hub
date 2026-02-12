@@ -1,23 +1,83 @@
+// import { useEffect, useState } from "react";
+
+// const Restaurant = () => {
+//   const [resData, setResData] = useState(null);
+//   useEffect(() => {
+//     fetchData();
+//   }, []);
+//   const fetchData = async () => {
+//     const data = await fetch(
+//       "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.8373&lng=80.9165&restaurantId=60379&query=Biryani&submitAction=ENTER&source=collection",
+//     );
+//     const json = await data.json();
+//     setResData(json);
+//     // console.log(json?.data?.cards[2]?.card?.card?.info);
+//   };
+
+//   console.log(resData.data?.cards[2]?.card?.card?.info);
+//   if (resData === null) return;
+//   const { name, areaName, avgRating, totalRatingsString, costForTwoMessage } =
+//     resData.data?.cards[2]?.card?.card?.info;
+//   return (
+//     <div>
+//       <div className="top-header">
+//         <h2>{name}</h2>
+//         <h3>{areaName}</h3>
+//         <p>
+//           {avgRating} ({totalRatingsString}) - {costForTwoMessage}
+//         </p>
+//       </div>
+//     </div>
+//   );
+// };
+// export default Restaurant;
+
 import { useEffect, useState } from "react";
+import ShimmerItem from "./ShimmerItem";
+import { useParams } from "react-router";
+import { MENU_IMG_CDN } from "../utils/Constants";
 
 const Restaurant = () => {
+  const { id } = useParams();
   const [resData, setResData] = useState(null);
+
   useEffect(() => {
     fetchData();
   }, []);
+
   const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.8373&lng=80.9165&restaurantId=60379&query=Biryani&submitAction=ENTER&source=collection",
-    );
-    const json = await data.json();
-    setResData(json);
-    // console.log(json?.data?.cards[2]?.card?.card?.info);
+    try {
+      const res = await fetch(
+        "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.8373&lng=80.9165&restaurantId=" +
+          id,
+      );
+
+      const json = await res.json();
+      setResData(json);
+    } catch (error) {
+      console.log("Error fetching menu:", error);
+    }
   };
 
-  console.log(resData.data?.cards[2]?.card?.card?.info);
+  // 🟢 Show loading state
+  if (!resData) return <ShimmerItem />; //improvement
+  // console.log(
+  //   resData?.data?.cards[5]?.groupedCard.cardGroupMap.REGULAR.cards[1].card.card
+  //     ?.itemCards,
+  // );
+  const items =
+    resData?.data?.cards[5]?.groupedCard.cardGroupMap.REGULAR.cards[5].card.card
+      ?.itemCards;
+  console.log(items);
+  const info = resData?.data?.cards //improvement
+    ?.map((c) => c.card?.card)
+    ?.find((c) => c?.info)?.info;
+
+  if (!info) return <h2>No Restaurant Data</h2>;
 
   const { name, areaName, avgRating, totalRatingsString, costForTwoMessage } =
-    resData.data?.cards[2]?.card?.card?.info;
+    info;
+
   return (
     <div>
       <div className="top-header">
@@ -27,7 +87,27 @@ const Restaurant = () => {
           {avgRating} ({totalRatingsString}) - {costForTwoMessage}
         </p>
       </div>
+      <div className="menu">
+        <h2>Menu</h2>
+        <ul>
+          {items.map((item) => (
+            <div key={item.card.info.id}>
+              <h3>{item.card.info.name}</h3>{" "}
+              <h4>
+                Rs.
+                {item.card.info.price / 100 ||
+                  item.card.info.defaultPrice / 100}
+              </h4>
+              <div>
+                <img src={MENU_IMG_CDN + item.card.info.imageId} alt="" />
+              </div>
+              <hr />
+            </div>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
+
 export default Restaurant;
