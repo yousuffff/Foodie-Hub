@@ -143,6 +143,7 @@ button:active:after {
   justify-content: center;
 }
 .res-card {
+  text-decoration: none;
   width: 300px;
 
   border-radius: 10px;
@@ -260,4 +261,33 @@ button:active:after {
   height: 15px;
   width: 30%;
   margin-top: 8px;
+}
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 0 3rem;
+  background-color: aquamarine;
+}
+.item-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.img-icon {
+  position: relative;
+}
+.img-icon img {
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.add-to-card {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+}
+Link {
+  text-decoration: none;
 }

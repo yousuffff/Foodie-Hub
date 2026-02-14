@@ -36,6 +36,7 @@ import { useEffect, useState } from "react";
 import ShimmerItem from "./ShimmerItem";
 import { useParams } from "react-router";
 import { MENU_IMG_CDN } from "../utils/Constants";
+import ItemCard from "./ItemCard";
 
 const Restaurant = () => {
   const { id } = useParams();
@@ -61,14 +62,16 @@ const Restaurant = () => {
 
   // 🟢 Show loading state
   if (!resData) return <ShimmerItem />; //improvement
-  // console.log(
-  //   resData?.data?.cards[5]?.groupedCard.cardGroupMap.REGULAR.cards[1].card.card
-  //     ?.itemCards,
-  // );
+
+  // console.log(resData?.data?.cards[5]?.groupedCard.cardGroupMap.REGULAR);
+  const itemList = resData?.data?.cards[5]?.groupedCard.cardGroupMap.REGULAR;
+  console.log(itemList);
+
   const items =
-    resData?.data?.cards[5]?.groupedCard.cardGroupMap.REGULAR.cards[5].card.card
+    resData?.data?.cards[5]?.groupedCard.cardGroupMap.REGULAR.cards[2].card.card
       ?.itemCards;
   console.log(items);
+
   const info = resData?.data?.cards //improvement
     ?.map((c) => c.card?.card)
     ?.find((c) => c?.info)?.info;
@@ -91,18 +94,7 @@ const Restaurant = () => {
         <h2>Menu</h2>
         <ul>
           {items.map((item) => (
-            <div key={item.card.info.id}>
-              <h3>{item.card.info.name}</h3>{" "}
-              <h4>
-                Rs.
-                {item.card.info.price / 100 ||
-                  item.card.info.defaultPrice / 100}
-              </h4>
-              <div>
-                <img src={MENU_IMG_CDN + item.card.info.imageId} alt="" />
-              </div>
-              <hr />
-            </div>
+            <ItemCard key={item.card.info.id} item={item} />
           ))}
         </ul>
       </div>
