@@ -75,8 +75,8 @@ button {
   appearance: button;
   /* background-color: #1899d6; */
   border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
+  border-radius: 10px;
+  /* border-width: 0 0 4px; */
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -84,7 +84,7 @@ button {
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.8px;
-
+  color: black;
   margin: 0;
   outline: none;
   overflow: visible;
@@ -101,27 +101,17 @@ button {
   white-space: nowrap;
 }
 
-button:after {
-  background-clip: padding-box;
-  background-color: #1cb0f6;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  bottom: -4px;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
 button:focus {
   user-select: auto;
 }
 
-button:hover:not(:disabled) {
-  filter: brightness(1.1);
+/* button:hover:not(:disabled) {
+  background-color: red;
+  color: #ffffff;
+} */
+button:hover {
+  background-color: red;
+  color: #ffffff;
 }
 
 button:disabled {
@@ -267,7 +257,7 @@ button:active:after {
   justify-content: space-between;
   margin: 10px 0;
   padding: 0 3rem;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 .item-info {
   display: flex;
@@ -278,16 +268,26 @@ button:active:after {
   position: relative;
 }
 .img-icon img {
+  object-fit: cover;
   height: 200px;
   width: 200px;
   padding: 10px;
   border-radius: 20px;
 }
 .add-to-card {
+  color: #1ba672;
+  border: 1px gray solid;
+  background-color: white;
+  width: 100px;
   position: absolute;
   bottom: 0;
-  left: 80px;
+  left: 60px;
 }
-Link {
+.add-to-card:hover {
+  background-color: #f0f0f0;
+  color: #1ba672;
+}
+.custom-link {
   text-decoration: none;
+  color: inherit;
 }

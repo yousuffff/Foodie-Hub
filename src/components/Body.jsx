@@ -171,7 +171,7 @@ const Body = () => {
           <h2>No Card</h2>
         ) : (
           filterRestaurants.map((res) => (
-            <Link key={res.info.id} to={"/restaurent/" + res.info.id}>
+            <Link key={res.info.id} to={"/restaurent/" + res.info.id} className="custom-link">
               <ResCard resData={res.info} />
             </Link>
           ))

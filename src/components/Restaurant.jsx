@@ -68,8 +68,8 @@ const Restaurant = () => {
   console.log(itemList);
 
   const items =
-    resData?.data?.cards[5]?.groupedCard.cardGroupMap.REGULAR.cards[2].card.card
-      ?.itemCards;
+    resData?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
+      ?.card?.itemCards;
   console.log(items);
 
   const info = resData?.data?.cards //improvement

@@ -6,19 +6,29 @@ const Header = () => {
   const [btnName, setBtnName] = useState("Login");
   return (
     <div className="header">
-      <img className="logo" src={LOGO_CDN} alt="Logo" />
+      <Link className="custom-link" to={"/"}>
+        <img className="logo" src={LOGO_CDN} alt="Logo" />
+      </Link>
       <div className="nav-link">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" className="custom-link">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" className="custom-link">
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact us</Link>
+          <Link to="/contact" className="custom-link">
+            Contact us
+          </Link>
         </li>
         <li>
-          <Link to="/">Cart</Link>
+          <Link to="/" className="custom-link">
+            Cart
+          </Link>
         </li>
 
         <button
