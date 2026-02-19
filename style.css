@@ -291,3 +291,11 @@ button:active:after {
   text-decoration: none;
   color: inherit;
 }
+.user{
+  height: 40vh;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  width: 20vw;
+  border-radius: 20px;
+}
