@@ -2,8 +2,12 @@ import React from "react";
 import User from "./UserClass";
 
 class AboutUs extends React.Component {
-  constructo(){
-    
+  constructor() {
+    super();
+    console.log("constructor called");
+  }
+  componentDidMount() {
+    console.log("Component Mounted");
   }
   render() {
     return (
