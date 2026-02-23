@@ -9,19 +9,19 @@ class AboutUs extends React.Component {
   componentDidMount() {
     console.log("Component Mounted");
 
-    this.timer = setInterval(() => {
-      console.log("this is set interval ");
-    }, 1000);
+    // this.timer = setInterval(() => {
+    //   console.log("this is set interval ");
+    // }, 1000);
   }
-  componentWillUnmount() {
-    clearInterval(this.timer);
-  }
+  // componentWillUnmount() {
+  //   clearInterval(this.timer);
+  // }
   render() {
     return (
       <div>
         <h2>About me</h2>
         <h2> kya karega jaan ke</h2>
-        <div>
+        <div>                                                                         
           <User name={"Mohd Yousuf"} location={"Lucknow"} />
         </div>
       </div>

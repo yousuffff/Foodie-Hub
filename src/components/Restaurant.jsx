@@ -37,28 +37,30 @@ import ShimmerItem from "./ShimmerItem";
 import { useParams } from "react-router";
 import { MENU_IMG_CDN } from "../utils/Constants";
 import ItemCard from "./ItemCard";
+import useResturentMenu from "../utils/useResturentMenu";
 
 const Restaurant = () => {
   const { id } = useParams();
-  const [resData, setResData] = useState(null);
+  // const [resData, setResData] = useState(null);
+  const resData = useResturentMenu(id)
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
-  const fetchData = async () => {
-    try {
-      const res = await fetch(
-        "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.8373&lng=80.9165&restaurantId=" +
-          id,
-      );
+  // const fetchData = async () => {
+  //   try {
+  //     const res = await fetch(
+  //       "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.8373&lng=80.9165&restaurantId=" +
+  //         id,
+  //     );
 
-      const json = await res.json();
-      setResData(json);
-    } catch (error) {
-      console.log("Error fetching menu:", error);
-    }
-  };
+  //     const json = await res.json();
+  //     setResData(json);
+  //   } catch (error) {
+  //     console.log("Error fetching menu:", error);
+  //   }
+  // };
 
   // 🟢 Show loading state
   if (!resData) return <ShimmerItem />; //improvement
