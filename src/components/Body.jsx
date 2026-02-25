@@ -3,7 +3,9 @@ import ResCard from "./ResCard";
 import { useEffect, useState } from "react";
 import ResCardShimmer from "./ResCarsShimmer";
 import { Link } from "react-router";
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
+  const status = useOnlineStatus();
   const [listOfRestaurants, setListOfRestaurants] = useState(dataList);
   const [filterRestaurants, setFilterRestaurants] = useState(listOfRestaurants);
   console.log(listOfRestaurants);
@@ -33,7 +35,9 @@ const Body = () => {
       console.log("error is here", error);
     }
   };
-  return !filterRestaurants?.length ? (
+  return !status ? (
+    "NETWORK IS DOWN"
+  ) : !filterRestaurants?.length ? (
     Array(8)
       .fill("")
       .map((_, index) => <ResCardShimmer key={index} />)
@@ -60,14 +64,20 @@ const Body = () => {
         >
           Top Rated Restaurents
         </button>
-        <button onClick={() => setFilterRestaurants(listOfRestaurants)}>Reset</button>
+        <button onClick={() => setFilterRestaurants(listOfRestaurants)}>
+          Reset
+        </button>
       </div>
       <div className="res-container">
         {filterRestaurants.length === 0 ? (
           <h2>No Card</h2>
         ) : (
           filterRestaurants.map((res) => (
-            <Link key={res.info.id} to={"/restaurent/" + res.info.id} className="custom-link">
+            <Link
+              key={res.info.id}
+              to={"/restaurent/" + res.info.id}
+              className="custom-link"
+            >
               <ResCard resData={res.info} />
             </Link>
           ))

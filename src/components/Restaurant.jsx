@@ -38,11 +38,12 @@ import { useParams } from "react-router";
 import { MENU_IMG_CDN } from "../utils/Constants";
 import ItemCard from "./ItemCard";
 import useResturentMenu from "../utils/useResturentMenu";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Restaurant = () => {
   const { id } = useParams();
   // const [resData, setResData] = useState(null);
-  const resData = useResturentMenu(id)
+  const resData = useResturentMenu(id);
 
   // useEffect(() => {
   //   fetchData();
