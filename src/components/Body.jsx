@@ -1,5 +1,5 @@
 import dataList from "../utils/Mockdata";
-import ResCard from "./ResCard";
+import ResCard, { PromotedResCard } from "./ResCard";
 import { useEffect, useState } from "react";
 import ResCardShimmer from "./ResCarsShimmer";
 import { Link } from "react-router";
@@ -10,6 +10,7 @@ const Body = () => {
   const [filterRestaurants, setFilterRestaurants] = useState(listOfRestaurants);
   console.log(listOfRestaurants);
   const [searchText, setSearchText] = useState("");
+  const PromotedResCar = PromotedResCard(ResCard);
   useEffect(() => {
     fetchData();
   }, []);
@@ -78,7 +79,11 @@ const Body = () => {
               to={"/restaurent/" + res.info.id}
               className="custom-link"
             >
-              <ResCard resData={res.info} />
+              {res.info.promoted ? (
+                <PromotedResCar resData={res.info} />
+              ) : (
+                <ResCard resData={res.info} />
+              )}
             </Link>
           ))
         )}

@@ -1,6 +1,87 @@
 const dataList = [
   {
     info: {
+      id: "229728",
+      name: "The Good Bowl",
+      cloudinaryImageId:
+        "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/15/45f37283-c89f-44bb-af5b-0dfcef41e83b_229728.jpg",
+      locality: "Habibulla Estate Road",
+      areaName: "Hazratganj",
+      costForTwo: "₹400 for two",
+      cuisines: ["Biryani", "Pastas", "Punjabi", "Desserts", "Beverages"],
+      avgRating: 4.5,
+      parentId: "7918",
+      avgRatingString: "4.5",
+      totalRatingsString: "3.2K+",
+      promoted: true,
+      adTrackingId:
+        "cid=be448631-ade5-4c78-8855-16b7a952109e~p=3~adgrpid=be448631-ade5-4c78-8855-16b7a952109e#ag14~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=229728~plpr=COLLECTION~eid=ffd95c99-82c7-4085-99c3-570c8df585fd~srvts=1770800209286~collid=83639",
+      sla: {
+        deliveryTime: 34,
+        lastMileTravel: 4.2,
+        serviceability: "SERVICEABLE",
+        slaString: "30-40 mins",
+        lastMileTravelString: "4.2 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2026-02-11 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          textBased: {},
+          imageBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "ITEMS",
+        subHeader: "AT ₹99",
+        logoCtx: {
+          text: "BENEFITS",
+        },
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+        commsStyling: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+      externalRatings: {
+        aggregatedRating: {
+          rating: "--",
+        },
+      },
+      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      campaignId: "be448631-ade5-4c78-8855-16b7a952109e",
+    },
+    analytics: {},
+    cta: {
+      link: "swiggy://menu?restaurant_id=229728&source=collection&query=Biryani",
+      text: "RESTAURANT_MENU",
+      type: "DEEPLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
+  },
+  ,
+  {
+    info: {
       id: "60379",
       name: "Pizza Hut",
       cloudinaryImageId:
@@ -937,8 +1018,6 @@ const dataList = [
       type: "WEBLINK",
     },
   },
-
-  ,
   {
     info: {
       id: "635227",
@@ -1802,87 +1881,6 @@ const dataList = [
     analytics: {},
     cta: {
       link: "swiggy://menu?restaurant_id=591314&source=collection&query=Biryani",
-      text: "RESTAURANT_MENU",
-      type: "DEEPLINK",
-    },
-    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food",
-  },
-
-  {
-    info: {
-      id: "229728",
-      name: "The Good Bowl",
-      cloudinaryImageId:
-        "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/15/45f37283-c89f-44bb-af5b-0dfcef41e83b_229728.jpg",
-      locality: "Habibulla Estate Road",
-      areaName: "Hazratganj",
-      costForTwo: "₹400 for two",
-      cuisines: ["Biryani", "Pastas", "Punjabi", "Desserts", "Beverages"],
-      avgRating: 4.5,
-      parentId: "7918",
-      avgRatingString: "4.5",
-      totalRatingsString: "3.2K+",
-      promoted: true,
-      adTrackingId:
-        "cid=be448631-ade5-4c78-8855-16b7a952109e~p=3~adgrpid=be448631-ade5-4c78-8855-16b7a952109e#ag14~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=229728~plpr=COLLECTION~eid=ffd95c99-82c7-4085-99c3-570c8df585fd~srvts=1770800209286~collid=83639",
-      sla: {
-        deliveryTime: 34,
-        lastMileTravel: 4.2,
-        serviceability: "SERVICEABLE",
-        slaString: "30-40 mins",
-        lastMileTravelString: "4.2 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2026-02-11 23:59:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          textBased: {},
-          imageBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "ITEMS",
-        subHeader: "AT ₹99",
-        logoCtx: {
-          text: "BENEFITS",
-        },
-      },
-      orderabilityCommunication: {
-        title: {},
-        subTitle: {},
-        message: {},
-        customIcon: {},
-        commsStyling: {},
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-      externalRatings: {
-        aggregatedRating: {
-          rating: "--",
-        },
-      },
-      ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-      campaignId: "be448631-ade5-4c78-8855-16b7a952109e",
-    },
-    analytics: {},
-    cta: {
-      link: "swiggy://menu?restaurant_id=229728&source=collection&query=Biryani",
       text: "RESTAURANT_MENU",
       type: "DEEPLINK",
     },

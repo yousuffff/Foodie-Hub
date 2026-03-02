@@ -18,4 +18,15 @@ const ResCard = ({ resData }) => {
     </div>
   );
 };
+
+export const PromotedResCard = (WrappedComponent) => {
+  return (props) => {
+    return (
+      <div className="promoted-card">
+        <span className="promoted-label">Promoted</span>
+        <WrappedComponent {...props} />
+      </div>
+    );
+  };
+};
 export default ResCard;
